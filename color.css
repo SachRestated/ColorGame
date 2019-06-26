@@ -1,0 +1,78 @@
+body{
+	background-color : #232323;
+	margin:  0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.square {
+	width: 30%;
+	background: purple;
+	padding-top: 30%;
+	float: left;
+	margin : 1.66%;
+	border-radius: 15%;
+	transition: background 0.4s;
+}
+
+#container {
+	max-width: 600px;
+	margin: 0 auto;
+	padding-top: 15px;
+	clear: both;
+}
+
+#colorDisplay {
+	font-size: 200%;
+	font-family: 'Averin' ;
+}
+
+h1{
+	padding: 20px 0;
+	text-align: center;
+	line-height: 1.1
+	font-size: 45px;
+	text-transform: uppercase;
+	color: white;
+	margin: 0 auto;
+	background: steelblue;
+	font-weight: normal;
+}
+
+span{
+	color: white;
+}
+
+#stripe{
+	background: white;
+	height: 30px;
+	text-align: center;
+	clear: both;
+}
+
+
+#msg{
+	color: black;
+	display: inline-block; /* Used to eatup space b/w 2 elements on same line */
+	width: 20%;
+}
+
+.selected{
+	background : steelblue;
+	color: white;
+}
+
+button{
+	border: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	transition: all 0.4s;
+}
+
+button:hover{
+	color: white;
+	background: steelblue;
+}
+
