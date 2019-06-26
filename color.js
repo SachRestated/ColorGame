@@ -104,7 +104,7 @@ for(var i=0; i<squares.length; i++) {
 				correct.play();
 			}
 			else {
-				if(squares[0].style.background !== squares[1].style.background)
+				if(squares[0].style.backgroundColor !== squares[1].style.backgroundColor)
 					correct.play();
 			}
 			msgDisplay.textContent = "Correct!";
