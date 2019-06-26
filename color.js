@@ -103,10 +103,8 @@ for(var i=0; i<squares.length; i++) {
 				wrong.load();
 				correct.play();
 			}
-			else {
-				if(squares[0].style.backgroundColor !== squares[1].style.backgroundColor)
-					correct.play();
-			}
+			else 
+				correct.play();
 			msgDisplay.textContent = "Correct!";
 			changeColor(pickedColor);
 			h1.style.backgroundColor = pickedColor;
