@@ -53,7 +53,7 @@ hardBtn.addEventListener("click", function(){
 
 
 resetButton.addEventListener("click", function() {
-	//generate raandom colors
+	//generate random colors
 	//pick a new color from the array
 	//change the colors of the sqaures
 	msgDisplay.textContent = "";
@@ -103,8 +103,10 @@ for(var i=0; i<squares.length; i++) {
 				wrong.load();
 				correct.play();
 			}
-			else 
-				correct.play();
+			else {
+				if(squares[0].style.background !== squares[1].style.background)
+					correct.play();
+			}
 			msgDisplay.textContent = "Correct!";
 			changeColor(pickedColor);
 			h1.style.backgroundColor = pickedColor;
