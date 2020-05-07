@@ -18,7 +18,7 @@ colorDisplay.textContent = pickedColor;
 
 audioElement.addEventListener('timeupdate', function() {
     var t = audioElement.currentTime;
-    if (t > audioElement.duration - 1.5) {
+    if (t > audioElement.duration - 2.25) {
         audioElement.pause();
     }
 };
