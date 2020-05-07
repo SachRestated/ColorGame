@@ -13,7 +13,7 @@ var correct = new Audio();
 
 correct.src="correct.mp3"
 wrong.src = "wrong.mp3";
-wrong.volume = 0.5;
+wrong.volume = 0.3;
 colorDisplay.textContent = pickedColor;
 
 easyBtn.addEventListener("click", function(){
