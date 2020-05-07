@@ -16,6 +16,13 @@ wrong.src = "wrong.mp3";
 wrong.volume = 0.3;
 colorDisplay.textContent = pickedColor;
 
+audioElement.addEventListener('timeupdate', function() {
+    var t = audioElement.currentTime;
+    if (t > audioElement.duration - 1.5) {
+        audioElement.pause();
+    }
+});
+
 easyBtn.addEventListener("click", function(){
 	easyBtn.classList.add("selected");
 	hardBtn.classList.remove("selected");
@@ -89,12 +96,12 @@ for(var i=0; i<squares.length; i++) {
 			if(!wrong.ended) {
 				wrong.load();
 				wrong.play();
-// 				setInterval(function() {});
+				setInterval(function() {});
 				
 			}
 			else {
 				wrong.play();
-// 				setInterval(function() {});
+				setInterval(function() {});
 			}
 			this.style.backgroundColor = "#232323";
 			msgDisplay.textContent = "Try Again";
