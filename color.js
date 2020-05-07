@@ -16,10 +16,10 @@ wrong.src = "wrong.mp3";
 wrong.volume = 0.3;
 colorDisplay.textContent = pickedColor;
 
-audioElement.addEventListener('timeupdate', function() {
-    var t = audioElement.currentTime;
-    if (t > audioElement.duration - 1.5) {
-        audioElement.pause();
+wrong.addEventListener('timeupdate', function() {
+    var t = wrong.currentTime;
+    if (t > wrong.duration - 1.5) {
+        wrong.pause();
     }
 });
 
