@@ -18,7 +18,7 @@ colorDisplay.textContent = pickedColor;
 
 wrong.addEventListener('timeupdate', function() {
     var t = wrong.currentTime;
-    if (t > wrong.duration - 1.5) {
+    if (t > wrong.duration - 0.5) {
         wrong.pause();
     }
 });
